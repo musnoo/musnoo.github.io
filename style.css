@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+}
+
+/* Align nav links horizontally from left */
+nav {
+    display: flex;       /* horizontal layout */
+    gap: 15px;           /* space between boxes */
+}
+
+/* Make each link a "box" */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: #444;     /* box color */
+    padding: 10px 20px;   /* inside spacing */
+    border: 2px solid #000000; /* white border */
+    transition: background 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+    background: #666;     /* darker on hover */
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Profile image outside the box */
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #222;
+}
+/* Parent container for image + about box */
+.about-wrapper {
+  display: flex;           /* side-by-side layout */
+  align-items: flex-start; /* align top edges */
+  gap: 30px;               /* space between image and box */
+  max-width: 900px;
+  margin: 40px auto;       /* center container horizontally */
+  flex-wrap: wrap;         /* stack on smaller screens */
+}
+
+/* About box styling */
+.about-box {
+  flex: 1;                 /* take remaining space */
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-box h2 {
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
